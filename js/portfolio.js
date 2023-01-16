@@ -1,36 +1,45 @@
-// lnb click_event(page_scroll)
+// info
+setTimeout(() => {
+  $('.gem_info1').css('display', 'none')
+}, 2000);
+
+
+// page_scroll(lnb_click_event)
 $('.lnb a').click(function(e) {
   e.preventDefault();
 
   $(window).scrollTo(this.hash || 0, 1000)
 })
 
-// lnb click_event(lnb_style)
+
+// lnb_style(lnb click_event)
 $('.lnb li').click(function() {
   $('.lnb li').removeClass('on')
   $('.lnb li').eq($(this).index()).addClass('on')
 })
 
-// window scroll_event(lnb_style)
+
+// lnb_style(window scroll_event)
 $(window).scroll(function() {
-  if($(this).scrollTop() == $('.profile').offset().top) {
+  if($(this).scrollTop() <= 800) {
     $('.lnb li').removeClass('on')
     $('.lnb li').eq(0).addClass('on')
-  } else if($(this).scrollTop() <= $('.skills').offset().top) {
+  } else if($(this).scrollTop() <= 1500) {
     $('.lnb li').removeClass('on')
     $('.lnb li').eq(1).addClass('on')
-  } else if($(this).scrollTop() <= $('.project').offset().top) {
+  } else if($(this).scrollTop() <= 2500) {
     $('.lnb li').removeClass('on')
     $('.lnb li').eq(2).addClass('on')
-  } else if($(this).scrollTop() <= $('.contact').offset().top) {
+  } else if($(this).scrollTop() <= 3500) {
     $('.lnb li').removeClass('on')
     $('.lnb li').eq(3).addClass('on')
   }
 })
 
-// skill progress_bar scroll_event
+
+// skill progress_bar(window scroll_event)
 $(window).scroll(function() {
-  if($(this).scrollTop() > 500) {
+  if($(this).scrollTop() > 800) {
     $('.html5').css('animation', 'circle90 2s linear forwards')
     $('.css3').css('animation', 'circle90 2s linear forwards')
     $('.scss').css('animation', 'circle60 1.3s linear forwards')
@@ -55,7 +64,8 @@ $(window).scroll(function() {
   }
 })
 
-// project site_plus click_event
+
+// project site_plus(click_event)
 for(let i=1; i<=4; i++) {
   $('.project .site_img' + i).click(function() {
     $('.site_plus'+ i).css('display', 'block')  
@@ -66,7 +76,10 @@ $('.cancle').click(function() {
   $('.site_plus').css('display', 'none')
 })
 
-// gem click_event
+
+// gem(click_event)
+let count = 0
+
 for(let i=1; i<=12; i++) {
   $('.gem' + i).click(function() {
     $('.gem' + i).css('display', 'none')
@@ -75,5 +88,15 @@ for(let i=1; i<=12; i++) {
     setTimeout(() => {
       $('.coin_box').css('display', 'none')
     }, 1000);
+    
+    count++
+    if(count === 12) {
+      setTimeout(() => {
+        $('.gem_info2').css('display', 'block')
+      }, 1500);
+      setTimeout(() => {
+        $('.gem_info2').css('display', 'none')
+      }, 3500);
+    }
   })
 }

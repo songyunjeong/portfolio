@@ -55,7 +55,7 @@ body {background-color: #F8F8F8;}
 .wrap .coin_box {
   display: none;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0; left: 0;
   z-index: 20;
@@ -95,13 +95,13 @@ body {background-color: #F8F8F8;}
 }
 .profile .gem1 {
   width: 85px;
-  top: 130px; left: 30px;
+  top: 140px; left: 30px;
   animation: gem1 0.8s infinite;
 }
 @keyframes gem1 {
-  0% {top: 130px;}
-  50% {top: 135px;}
-  100% {top: 130px;}
+  0% {top: 140px;}
+  50% {top: 145px;}
+  100% {top: 140px;}
 }
 .profile .gem2 {
   top: 300px; right: 0px;
@@ -121,6 +121,24 @@ body {background-color: #F8F8F8;}
   0% {left: 500px;}
   50% {left: 520px; transform: rotate(50deg);}
   100% {left: 500px;}
+}
+.profile .gem_info {
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 20;
+  cursor: none;
+}
+.profile .gem_info2 {display: none;}
+.profile .gem_info p {
+  color: #F8F8F8;
+  width: 300px; height: 50px;
+  font-size: 32px;
+  position: fixed;
+  top: calc(50% - 50px); left: calc(50% - 150px);
+  z-index: 21;
 }
 
 .profile > div {
@@ -220,7 +238,8 @@ body {background-color: #F8F8F8;}
 }
 
 .skills .circle_bar {
-  margin-top: 20px;
+  height: 700px;
+  padding-top: 100px; box-sizing: border-box;
 }
 .skills .circle_bar .bar_box {
   display: flex;
@@ -241,9 +260,6 @@ body {background-color: #F8F8F8;}
   box-shadow: 1px 1px 10px #C2C2C2;
   border-radius: 50%;
   margin: 10px 0 20px 10px;
-}
-.skills .circle_bar .bar .circle span {
-  font-weight: bold;
 }
 
 .skills .circle_bar .bar .html5 {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
@@ -275,6 +291,10 @@ body {background-color: #F8F8F8;}
   width: 180px; height: 50px;
   font-size: 14px;
   text-align: center;
+}
+.skills .circle_bar .bar .circle span {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* project */
