@@ -7,6 +7,16 @@ li {list-style: none;}
 a {color: #707070; text-decoration: none;}
 body {background-color: #F8F8F8;}
 
+:root {
+  --percent: 0deg;
+}
+
+@property --percent {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 
@@ -59,6 +69,13 @@ body {background-color: #F8F8F8;}
 @keyframes coin {
   from {transform: rotateY(0deg);}
   to {transform: rotateY(360deg);}
+}
+.wrap .coin_box .txt {
+  color: #F8F8F8;
+  font-size: 18px;
+  position: fixed;
+  top: calc(50% - 120px); left: calc(50% - 85px);
+  z-index: 21;
 }
 
 /* profile */
@@ -225,16 +242,25 @@ body {background-color: #F8F8F8;}
   border-radius: 50%;
   margin: 10px 0 20px 10px;
 }
-.skills .circle_bar .bar .html5 {background: conic-gradient(#76D2CF 0%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .css3 {background: conic-gradient(#76D2CF 90%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .scss {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .javascript {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .jquery {background: conic-gradient(#76D2CF 80%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .react {background: conic-gradient(#76D2CF 50%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .git {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .illustrator {background: conic-gradient(#76D2CF 90%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .photoshop {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
-.skills .circle_bar .bar .xd {background: conic-gradient(#76D2CF 80%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .circle span {
+  font-weight: bold;
+}
+
+.skills .circle_bar .bar .html5 {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .css3 {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .scss {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .javascript {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .jquery {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .react {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .git {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .illustrator {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .photoshop {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+.skills .circle_bar .bar .xd {background: conic-gradient(#76D2CF 0deg var(--percent), #F2F2F2 0deg 360deg);}
+@keyframes circle90 {100% {--percent: 324deg}}
+@keyframes circle80 {100% {--percent: 288deg}}
+@keyframes circle60 {100% {--percent: 216deg}}
+@keyframes circle50 {100% {--percent: 180deg}}
+
 .skills .circle_bar .bar .circle .skill_name {
   width: 130px; height: 130px;
   background-color: #F8F8F8;

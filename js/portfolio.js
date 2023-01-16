@@ -31,7 +31,27 @@ $(window).scroll(function() {
 // skill progress_bar scroll_event
 $(window).scroll(function() {
   if($(this).scrollTop() > 500) {
-    $('.html5').css('background', 'conic-gradient(#76D2CF 90%, #F2F2F2 0% 100%)')
+    $('.html5').css('animation', 'circle90 2s linear forwards')
+    $('.css3').css('animation', 'circle90 2s linear forwards')
+    $('.scss').css('animation', 'circle60 1.3s linear forwards')
+    $('.javascript').css('animation', 'circle60 1.3s linear forwards')
+    $('.jquery').css('animation', 'circle80 1.7s linear forwards')
+    $('.react').css('animation', 'circle50 1.1s linear forwards')
+    $('.git').css('animation', 'circle60 1.3s linear forwards')
+    $('.illustrator').css('animation', 'circle90 2s linear forwards')
+    $('.photoshop').css('animation', 'circle60 1.3s linear forwards')
+    $('.xd').css('animation', 'circle80 1.7s linear forwards')
+  } else {
+    $('.html5').css('animation', '')
+    $('.css3').css('animation', '')
+    $('.scss').css('animation', '')
+    $('.javascript').css('animation', '')
+    $('.jquery').css('animation', '')
+    $('.react').css('animation', '')
+    $('.git').css('animation', '')
+    $('.illustrator').css('animation', '')
+    $('.photoshop').css('animation', '')
+    $('.xd').css('animation', '')
   }
 })
 
