@@ -1,0 +1,520 @@
+* {
+  margin: 0; padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #707070;
+}
+li {list-style: none;}
+a {color: #707070; text-decoration: none;}
+body {background-color: #F8F8F8;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+/* lnb */
+.lnb {
+  width: 1000px;
+  position: fixed;
+  top: 20px; left: calc(50vw - 500px);
+  z-index: 10;
+}
+.lnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+.lnb a {
+  color: #C2C2C2;
+  font-size: 20px;
+}
+.lnb .on a {
+  color: #707070;
+  font-weight: 600;
+}
+
+/* wrap */
+.wrap {
+  width: 1280px;
+  margin: 0 auto;
+}
+.wrap section {
+  width: 100%; height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap .coin_box {
+  display: none;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 20;
+}
+.wrap .coin_box .coin {
+  position: fixed;
+  top: calc(50% - 58px); left: calc(50% - 58px);
+  z-index: 21;
+  animation: coin 0.5s linear infinite;
+}
+@keyframes coin {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
+
+/* profile */
+.profile {
+  position: relative;
+}
+.profile .gem img {
+  position: absolute;
+  z-index: 1;
+}
+.gem img:hover {
+  cursor: grab;
+  animation-play-state: paused;
+}
+.gem img:active {
+  cursor: grabbing;
+}
+.profile .gem1 {
+  width: 85px;
+  top: 130px; left: 30px;
+  animation: gem1 0.8s infinite;
+}
+@keyframes gem1 {
+  0% {top: 130px;}
+  50% {top: 135px;}
+  100% {top: 130px;}
+}
+.profile .gem2 {
+  top: 300px; right: 0px;
+  animation: gem2 2s infinite;
+}
+@keyframes gem2 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+.profile .gem3 {
+  width: 80px;
+  bottom: 20px; left: 500px;
+  animation: gem3 3s infinite;
+}
+@keyframes gem3 {
+  0% {left: 500px;}
+  50% {left: 520px; transform: rotate(50deg);}
+  100% {left: 500px;}
+}
+
+.profile > div {
+  height: 700px;
+  background-color: white;
+  box-shadow: 1px 1px 10px #C2C2C2;
+}
+.profile .left {
+  width: 400px;
+  margin-right: 40px;
+}
+.profile .left .img {
+  width: 250px; height: 250px;
+  border-radius: 150px;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  margin-top: 80px;
+  margin-left: 75px;
+  overflow: hidden;
+}
+.profile .left .img img {
+  width: 100%;
+}
+.profile .left .txt {
+  margin-top: 35px;
+  padding: 0 50px; box-sizing: border-box;
+}
+.profile .left .txt li {
+  font-size: 15px;
+}
+.profile .left .txt li:last-child {
+  margin-top: 20px;
+}
+.profile .left .txt span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.profile .right {
+  width: 800px;
+  padding-top: 80px; box-sizing: border-box;
+}
+.profile .right .act {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.profile .right .act .title {
+  width: 130px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
+}
+.profile .right .act .contents {
+  width: 620px;
+}
+.profile .right .act .contents li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* skills */
+.skills {
+  position: relative;
+}
+.skills .gem img {
+  position: absolute;
+}
+.skills .gem4 {
+  width: 120px;  
+  top: 600px; left: 0px;
+  animation: gem4 2s linear infinite;
+}
+@keyframes gem4 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+.skills .gem5 {
+  width: 100px;
+  top: 400px; right: 0;
+  transform: rotate(240deg);
+  animation: gem5 0.8s infinite;
+}
+@keyframes gem5 {
+  0% {top: 400px;}
+  50% {top: 405px;}
+  100% {top: 400px;}
+}
+.skills .gem6 {
+  width: 80px;
+  bottom: 30px; left: 300px;
+  animation: gem6 5s linear infinite;
+}
+@keyframes gem6 {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.skills .circle_bar {
+  margin-top: 20px;
+}
+.skills .circle_bar .bar_box {
+  display: flex;
+  justify-content: space-between;
+  width: 980px; height: 250px;
+}
+.skills .circle_bar .bar_box2 {
+  margin-top: 20px;
+}
+.skills .circle_bar .bar {
+  width: 180px; height: 260px;
+}
+.skills .circle_bar .bar .circle {
+  display: flex;  
+  width: 160px; height: 160px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  border-radius: 50%;
+  margin: 10px 0 20px 10px;
+}
+.skills .circle_bar .bar .html5 {background: conic-gradient(#76D2CF 0%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .css3 {background: conic-gradient(#76D2CF 90%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .scss {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .javascript {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .jquery {background: conic-gradient(#76D2CF 80%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .react {background: conic-gradient(#76D2CF 50%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .git {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .illustrator {background: conic-gradient(#76D2CF 90%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .photoshop {background: conic-gradient(#76D2CF 60%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .xd {background: conic-gradient(#76D2CF 80%, #F2F2F2 0% 100%);}
+.skills .circle_bar .bar .circle .skill_name {
+  width: 130px; height: 130px;
+  background-color: #F8F8F8;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  border-radius: 50%;
+  text-align: center;
+}
+.skills .circle_bar .bar .circle .skill_name p {
+  margin-top: 45px;
+}
+.skills .circle_bar .bar .txt {
+  width: 180px; height: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* project */
+.project {
+  position: relative;
+}
+.project .gem img {
+  position: absolute;
+}
+.project .gem7 {
+  width: 90px;
+  top: 400px; left: 0px;
+  animation: gem7 1s infinite;
+}
+@keyframes gem7 {
+  0% {transform: rotate(70deg);}
+  30% {transform: rotate(90deg);}
+  100% {transform: rotate(70deg);}
+}
+.project .gem8 {
+  width: 100px;
+  top: 300px; right: 10px;
+  animation: gem8 0.5s infinite;
+}
+@keyframes gem8 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100% {transform: rotate(0deg);}
+}
+.project .gem9 {
+  width: 130px;
+  bottom: 80px; right: 350px;
+  animation: gem9 0.8s infinite;
+}
+@keyframes gem9 {
+  0% {bottom: 80px;}
+  50% {bottom: 85px;}
+  100% {bottom: 80px;}
+}
+
+.project > div {
+  margin-right: 40px;
+}
+.project > div:last-child {
+  margin-right: 0;
+}
+.project .site_img {
+  width: 240px; height: 360px;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.project .site_img img {
+  height: 100%;
+}
+.project .site_img:hover {
+  box-shadow: 1px 1px 20px #C2C2C2;
+  cursor: pointer;
+}
+.project .site_txt {
+  width: 240px; height: 120px;
+  text-align: center;
+}
+.project .site_txt li {
+  font-size: 14px;
+}
+.project .site_txt li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.project .site_txt li:nth-child(2) {
+  margin-bottom: 10px;
+}
+.project .site_plus {
+  display: none;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 20;
+}
+.project .site_plus .contents {
+  width: 1000px; height: 650px;
+  background-color: #F8F8F8;
+  box-shadow: 1px 1px 20px rgb(20, 20, 20);
+  position: fixed;
+  top: calc(50vh - 325px); left: calc(50vw - 500px);
+  z-index: 30;
+}
+.project .site_plus .cancle {
+  text-align: right;
+}
+.project .site_plus .cancle i {
+  font-size: 32px;
+  padding: 20px;
+}
+.project .site_plus .cancle:hover {
+  cursor: pointer;
+}
+.project .site_plus .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.project .site_plus .site_info {
+  display: flex;
+  width: 460px; height: 360px;
+  margin: 0 auto 40px;
+}
+.project .site_plus .site_info .site_img {
+  margin-top: 0;
+}
+.project .site_plus .site_info .site_img:hover {
+  box-shadow: 1px 1px 10px #C2C2C2;
+  cursor: auto;
+}
+
+.project .site_plus .site_info .info2 ul {
+  margin-left: 50px;
+}
+.project .site_plus .site_info .info2 li {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.project .site_plus .site_info .info3 ul {
+  margin-left: 25px;
+}
+.project .site_plus .site_info .info3 li,
+.project .site_plus .site_info .info4 li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.project .site_plus .site_info .info3 li a i,
+.project .site_plus .site_info .info4 li a i {
+  scale: 1.5;
+}
+.project .site_plus .site_info .info4 ul {
+  margin-left: 20px;
+}
+
+.project .site_plus1 .site_info .info2 ul {margin-top: 30px;}
+.project .site_plus1 .site_info .info3 ul {margin-top: 30px;}
+.project .site_plus1 .site_info .info4 ul {margin-top: 30px;}
+.project .site_plus2 .site_info .info2 ul {margin-top: 150px;}
+.project .site_plus2 .site_info .info3 ul {margin-top: 150px;}
+.project .site_plus2 .site_info .info4 ul {margin-top: 150px;}
+.project .site_plus3 .site_info .info2 ul {margin-top: 160px;}
+.project .site_plus3 .site_info .info3 ul {margin-top: 160px;}
+.project .site_plus3 .site_info .info4 ul {margin-top: 160px;}
+.project .site_plus4 .site_info .info2 ul {margin-top: 160px;}
+.project .site_plus4 .site_info .info3 ul {margin-top: 160px;}
+.project .site_plus4 .site_info .info4 ul {margin-top: 160px;}
+
+.project .site_plus .site_btn {
+  width: 500px;
+  margin: 0 auto;
+}
+.project .site_plus .site_btn ul {
+  display: flex;
+  justify-content: space-between;
+}
+.project .site_plus .site_btn li {
+  width: 150px; height: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  text-align: center;
+  line-height: 30px;
+}
+.project .site_plus .site_btn li a {
+  display: block;
+  font-size: 14px;
+}
+.project .site_plus .plus {
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.project .site_plus .plus > div {
+  display: inline-block;
+  margin-right: 15px;
+}
+.project .site_plus .plus .icon {
+  margin-right: 3px; 
+}
+.project .site_plus .plus .txt {
+  font-size: 12px;
+}
+.project .site_plus .plus > div > div {
+  display: inline-block;
+}
+.project .site_plus .mobile {
+  position: absolute;
+  top: 50px; left: 30px;
+  animation: mobile 0.8s infinite;
+}
+@keyframes mobile {
+  0% {top: 50px;}
+  50% {top: 53px;}
+  100% {top: 50px;}
+}
+.project .site_plus .mobile img {
+  width: 100px;
+}
+
+
+/* contact */
+.contact {
+  position: relative;
+}
+.contact .gem img {
+  position: absolute;
+}
+.contact .gem10 {
+  width: 100px;
+  top: 200px; left: 0px;
+  animation: gem10 10s linear infinite;
+}
+@keyframes gem10 {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+.contact .gem11 {
+  width: 180px;
+  top: 300px; right: 100px;
+  animation: gem11 1s infinite;
+}
+@keyframes gem11 {
+  0% {top: 300px;}
+  50% {top: 310px;}
+  100% {top: 300px;}
+}
+.contact .gem12 {
+  width: 90px;
+  bottom: 80px; left: 300px;
+  animation: gem12 0.8s infinite;
+}
+@keyframes gem12 {
+  0% {transform: rotate(60deg);}
+  30% {transform: rotate(80deg);}
+  100% {transform: rotate(60deg);}
+}
+
+.contact {
+  flex-direction: column;
+}
+.contact .thankyou {
+  width: 100%;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+.contact .contactsite {
+  margin-bottom: 150px;
+}
+.contact .contactsite li {
+  margin-bottom: 5px;
+}
+.contact .contactsite span {
+  display: inline-block;
+  width: 80px;
+  font-weight: 500;
+  text-align: right;
+  margin-right: 20px;
+}

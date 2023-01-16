@@ -1,0 +1,105 @@
+* {
+  margin: 0; padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #707070;
+}
+body {background-color: #F8F8F8;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.wrap {
+  width: 1280px; height: 800px;
+  text-align: center;
+  position: fixed;
+  top: calc(50vh - 400px); left: calc(50vw - 640px);
+}
+
+.frontend {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.profile {
+  position: relative;
+  margin-bottom: 50px;
+}
+.profile .img {
+  width: 250px; height: 250px;
+  background-color: black;
+  border-radius: 125px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.profile .img video {
+  width: 110%;
+  margin: 35px 0 0 -15px;
+}
+.profile .mac {
+  transform: rotate(5deg);
+  position: absolute;
+  top: 150px; right: 420px;
+}
+.profile .mac img {
+  display: block;
+  width: 130px;
+}
+
+.welcome {
+  font-size: 28px;
+  margin-bottom: 100px;
+}
+
+.gage {
+  position: relative;
+}
+.gage .click {
+  position: absolute;
+  top: -160px; left: 60px;
+  animation-name: click;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes click {
+  0% {top: -160px;}
+  50% {top: -165px;}
+  100% {top: -160px;}
+}
+.gage .bar_box {
+  width: 1180px; height: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 10px #C2C2C2;
+  margin: 0 auto;
+}
+.gage .bar_box .bar_on {
+  height: 30px;
+  background-color: #76D2CF;
+  animation-name: gagebar;
+  animation-duration: 2.5s;
+}
+@keyframes gagebar {
+  from {width: 0;}
+  to {width: 100%;}
+}
+.gage .tool {
+  position: absolute;
+  top: -50px; left: 30px;
+  animation-name: tool;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.gage .tool img {
+  width: 150px;
+  transform: rotate(60deg);
+}
+@keyframes tool {
+  0% {transform: rotate(20deg);}
+  50% {transform: rotate(5deg);}
+  100% {transform: rotate(20deg);}
+}
+.gage .tool:hover {
+  animation-duration: 0.5s;
+  cursor: grab;
+}
