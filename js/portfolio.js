@@ -21,7 +21,7 @@ $('.lnb li').click(function() {
 
 // lnb_style(window scroll_event)
 $(window).scroll(function() {
-  if($(this).scrollTop() <= 800) {
+  if($(this).scrollTop() <= 500) {
     $('.lnb li').removeClass('on')
     $('.lnb li').eq(0).addClass('on')
   } else if($(this).scrollTop() <= 1500) {

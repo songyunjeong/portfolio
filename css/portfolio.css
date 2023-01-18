@@ -167,6 +167,7 @@ body {background-color: #F8F8F8;}
 }
 .profile .left .txt li {
   font-size: 15px;
+  margin-bottom: 5px;
 }
 .profile .left .txt li:last-child {
   margin-top: 20px;
@@ -174,11 +175,11 @@ body {background-color: #F8F8F8;}
 .profile .left .txt span {
   font-size: 15px;
   font-weight: 500;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .profile .right {
   width: 800px;
-  padding-top: 80px; box-sizing: border-box;
+  padding-top: 55px; box-sizing: border-box;
 }
 .profile .right .act {
   display: flex;
@@ -196,7 +197,7 @@ body {background-color: #F8F8F8;}
 }
 .profile .right .act .contents li {
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* skills */
