@@ -175,7 +175,7 @@ body {background-color: #F8F8F8;}
 .profile .left .txt span {
   font-size: 15px;
   font-weight: 500;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .profile .right {
   width: 800px;
@@ -187,13 +187,13 @@ body {background-color: #F8F8F8;}
   margin-bottom: 25px;
 }
 .profile .right .act .title {
-  width: 130px;
+  width: 140px;
   font-size: 15px;
   font-weight: 500;
   text-align: right;
 }
 .profile .right .act .contents {
-  width: 620px;
+  width: 640px;
 }
 .profile .right .act .contents li {
   font-size: 15px;

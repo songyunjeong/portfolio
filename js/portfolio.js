@@ -43,7 +43,7 @@ $(window).scroll(function() {
     $('.html5').css('animation', 'circle90 2s linear forwards')
     $('.css3').css('animation', 'circle90 2s linear forwards')
     $('.scss').css('animation', 'circle60 1.3s linear forwards')
-    $('.javascript').css('animation', 'circle60 1.3s linear forwards')
+    $('.javascript').css('animation', 'circle80 1.3s linear forwards')
     $('.jquery').css('animation', 'circle80 1.7s linear forwards')
     $('.react').css('animation', 'circle50 1.1s linear forwards')
     $('.git').css('animation', 'circle60 1.3s linear forwards')

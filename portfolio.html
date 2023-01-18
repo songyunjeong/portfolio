@@ -10,7 +10,18 @@
   <link rel="stylesheet" href="./css/portfolio.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="./js/jquery.scrollTo.min.js"></script>
-  <script src="./js/portfolio.js" defer></script>  
+  <script src="./js/portfolio.js" defer></script>
+
+  <script>
+    function emartMobile() {
+      let popupWidth = 440;
+      let popupHeight = 800;
+      let popupTop = (window.screen.height / 2) - (popupHeight / 2);
+      let popupLeft = (window.screen.width / 2) - (popupWidth / 2);
+
+      let emartMobilePop = window.open('https://songyunjeong.github.io/emart_mobile_site/', '_blank', `width=${popupWidth}, height=${popupHeight}, top=${popupTop}, left=${popupLeft}`)
+    }
+  </script>
 </head>
 <body>
   <div class="lnb">
@@ -42,7 +53,7 @@
           <ul>
             <li><span>이&nbsp;&nbsp;름</span>송윤정</li>
             <li><span>나&nbsp;&nbsp;이</span>만 26세 (1996)</li>
-            <li><span>학&nbsp;&nbsp;교</span>부산대학교 의류학과</li>
+            <li><span>학&nbsp;&nbsp;교</span>부산대학교 의류학과 (15.03 - 20.02)</li>
             <li>
               다양한 업무 경험과 추진력으로 문제를 맞이하더라도 해결해 나갈 수 있는 문제해결 능력이 있습니다. 대학생 때부터 이어온 많은 아르바이트 활동을 통해 배운 사회경험으로 협업능력이 우수하며, 꾸준한 자기계발로 업무능력 향상을 위해 노력합니다. 개발 분야의 전문가가 되고 싶습니다. 개발 분야의 프로가 되는 것이 목표입니다.
             </li>
@@ -65,7 +76,7 @@
             <li>H&M [계약직] Sales Adviser 2017.07 - 2019.07 (2년1개월)</li>
             <li>MEGABOX [계약직] 2016.09 - 2017.06 (10개월)</li>
             <li>Dress cafe(보세 옷) [아르바이트] 2016.03 - 2016.08 (6개월)</li>
-            <li>블럭나라 [아르바이트] 2016.03-2016.04 (2개월)</li>
+            <li>블럭나라 [아르바이트] 2016.03 - 2016.04 (2개월)</li>
             <li>Redeye(악세서리) [아르바이트] 2015.06 - 2015.11 (6개월)</li>
             <li>Smart(교복) [아르바이트] 2014.12 - 2015.02 (3개월)</li>
           </ul>
@@ -123,7 +134,7 @@
           </div>
           <div class="bar4 bar">
             <div class="javascript circle">
-              <div class="skill_name"><p><span>JavaScript</span><br />60%</p></div>
+              <div class="skill_name"><p><span>JavaScript</span><br />80%</p></div>
             </div>
             <div class="txt">DOM 조작으로 화면제어,<br />동적인 요소 구현 가능</div>
           </div>
@@ -250,7 +261,7 @@
               </div>
             </div>
             <div class="mobile">
-              <div class="img"><a href="https://songyunjeong.github.io/emart_mobile_site/" target="_blank" onclick="alert('모바일 버전입니다. 개발자 모드로 봐주시면 감사하겠습니다.')"><img src="./images/emart_mobile.png" alt=""></a></div>
+              <div class="img"><a href="javascript:emartMobile()"><img src="./images/emart_mobile.png" alt=""></a></div>
               <div class="github"></div>
             </div>
           </div>
