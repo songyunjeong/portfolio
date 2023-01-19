@@ -21,6 +21,15 @@
 
       let emartMobilePop = window.open('https://songyunjeong.github.io/emart_mobile_site/', '_blank', `width=${popupWidth}, height=${popupHeight}, top=${popupTop}, left=${popupLeft}`)
     }
+
+    function busanMobile() {
+      let popupWidth = 440;
+      let popupHeight = 800;
+      let popupTop = (window.screen.height / 2) - (popupHeight / 2);
+      let popupLeft = (window.screen.width / 2) - (popupWidth / 2);
+
+      let emartMobilePop = window.open('https://songyunjeong.github.io/busan_site/', '_blank', `width=${popupWidth}, height=${popupHeight}, top=${popupTop}, left=${popupLeft}`)
+    }
   </script>
 </head>
 <body>
@@ -262,7 +271,6 @@
             </div>
             <div class="mobile">
               <div class="img"><a href="javascript:emartMobile()"><img src="./images/emart_mobile.png" alt=""></a></div>
-              <div class="github"></div>
             </div>
           </div>
         </div>
@@ -307,7 +315,7 @@
               <ul>
                 <li><a href="https://songyunjeong.github.io/busan_site/" target="_blank">사이트 보기</a></li>
                 <li><a href="https://github.com/songyunjeong/busan_site.git" target="_blank">깃허브 보기</a></li>
-                <li><a href="#!" style="color: #eee;" target="_blank">기획서 보기</a></li>
+                <li><a href="./pdf/busan_기획서.pdf" target="_blank">기획서 보기</a></li>
               </ul>
             </div>
             <div class="plus">
@@ -319,6 +327,9 @@
                 <div class="icon"><i class="fa-solid fa-code"></i></div>
                 <div class="txt">소스코드 보기</div>
               </div>
+            </div>
+            <div class="mobile">
+              <div class="img"><a href="javascript:busanMobile()"><img src="./images/busan_mobile.png" alt=""></a></div>
             </div>
           </div>
         </div>
