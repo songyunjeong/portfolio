@@ -199,6 +199,11 @@ body {background-color: #F8F8F8;}
   font-size: 15px;
   margin-bottom: 8px;
 }
+.profile .right .act .contents span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #C2C2C2;
+}
 
 /* skills */
 .skills {
@@ -417,7 +422,8 @@ body {background-color: #F8F8F8;}
 }
 
 .project .site_plus .site_info .info2 ul {
-  margin-left: 50px;
+  width: 100px;
+  margin-left: 45px;
 }
 .project .site_plus .site_info .info2 li {
   font-size: 14px;
@@ -443,9 +449,9 @@ body {background-color: #F8F8F8;}
 .project .site_plus1 .site_info .info2 ul {margin-top: 30px;}
 .project .site_plus1 .site_info .info3 ul {margin-top: 30px;}
 .project .site_plus1 .site_info .info4 ul {margin-top: 30px;}
-.project .site_plus2 .site_info .info2 ul {margin-top: 150px;}
-.project .site_plus2 .site_info .info3 ul {margin-top: 150px;}
-.project .site_plus2 .site_info .info4 ul {margin-top: 150px;}
+.project .site_plus2 .site_info .info2 ul {margin-top: 190px;}
+.project .site_plus2 .site_info .info3 ul {margin-top: 190px;}
+.project .site_plus2 .site_info .info4 ul {margin-top: 190px;}
 .project .site_plus3 .site_info .info2 ul {margin-top: 160px;}
 .project .site_plus3 .site_info .info3 ul {margin-top: 160px;}
 .project .site_plus3 .site_info .info4 ul {margin-top: 160px;}
@@ -502,6 +508,14 @@ body {background-color: #F8F8F8;}
 }
 .project .site_plus .mobile img {
   width: 100px;
+}
+.project .site_plus .team {
+  background-color: #F1F1F1;
+  width: 250px;
+  font-size: 13px;
+  padding: 10px; box-sizing: border-box;
+  position: absolute;
+  top: 200px; right: 200px;
 }
 
 
